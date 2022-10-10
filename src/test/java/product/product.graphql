@@ -1,0 +1,56 @@
+query product($productId: String!) {
+  product(productId: $productId) {
+    ... on Product {
+      productId
+      productName
+      productUri
+      destinationId
+      kfEarnMilesPromoText
+      keyCallouts
+      location
+      productSubcategories {
+        categoryId
+      }
+      shortDescription
+      mediaData
+      productTags {
+        tagId
+      }
+      currency
+      duration
+      guideLanguages
+      cancellationType
+      cancellationWindow
+      cancellationWindowText
+      minGroupSize
+      maxGroupSize
+      openDateTicket
+      collectPhysicalTicket
+      confirmationType
+      confirmationTypeText
+      voucherType
+      redemptionType
+      priceRangeFrom
+      priceRangeTo
+      latitude
+      longitude
+      address
+      availabilityStartDate
+      availabilityEndDate
+      content
+      productMetaView
+      status
+      rating
+      reviewCount
+      trackMeta
+      wishlistedCustomerCount
+      __typename
+    }
+    ... on PelagoError {
+      errorMessage
+      code
+      __typename
+    }
+    __typename
+  }
+}
