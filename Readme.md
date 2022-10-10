@@ -45,7 +45,7 @@ Maven Argument | Description
 `karate.env` | environment
 
 
-#### Steps
+#### Usage
 
 - Clone repository.
 - Execute tests using maven `mvn test -Dtest=TestRunner`
